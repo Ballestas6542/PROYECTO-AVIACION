@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROBOOK | Viaja por el mundo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="#" class="logo">
+                <span class="logo-icono">✈</span>
+                NERVIN<span>AIRLINE</span>
+            </a>
+
+            <button class="menu-movil" id="menuMovil">☰</button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#mision">Mision</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="sistema.html#admin">Administración</a></li>
+
+            </ul>
+
+            <a href="sistema.html#reservar" class="boton-menu">reservar</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA PRINCIPAL -->
+    <main>
+        <section class="portada" id="inicio">
+
+            <div class="portada-contenido">
+                <span class="etiqueta">TU PRÓXIMA AVENTURA COMIENZA AQUÍ</span>
+
+             <h1>
+                 Nuevos destinos,
+               <span>experiencias que te transforman.</span>
+            </h1>
+
+                <p>
+                    Explora nuevos destinos, disfruta experiencias
+                    inolvidables y encuentra los mejores vuelos
+                    para tu próxima aventura.
+                </p>
+
+                <a href="#reservar" class="boton-principal">
+                    Explorar destinos <span>→</span>
+                </a>
+            </div>
+
+<!-- AVION GRANDE -->
+<img
+    src="avion-hero.png"
+    alt="Avion comercial blanco con alas rojas"
+    class="avion-decorativo"
+>
+
+            <!-- BUSCADOR DE VUELOS -->
+            <div class="buscador" id="reservar">
+
+                <div class="buscador-titulo">
+                    <div>
+                        <h2>¿A dónde quieres viajar?</h2>
+                        <p>Encuentra tu próximo vuelo con nosotros.</p>
+                    </div>
+                    <span class="icono-avion">✈</span>
+                </div>
+
+                <form id="formularioVuelos">
+
+                    <div class="campo">
+                        <label for="origen">Origen</label>
+                        <select id="origen" required>
+                            <option value="">Selecciona origen</option>
+                            <option>Barranquilla</option>
+                            <option>Bogotá</option>
+                            <option>Medellín</option>
+                            <option>Cartagena</option>
+                            <option>Cali</option>
+
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="destino">Destino</label>
+                        <select id="destino" required>
+                            <option value="">Selecciona destino</option>
+                            <option>Cartagena</option>
+                            <option>San Andrés</option>
+                            <option>Medellín</option>
+                            <option>Santa Marta</option>
+                            <option>Miami</option>
+                            <option>Madrid</option>
+                            <option>Ciudad de Panamá</option>
+                            <option>New York</option>
+                            <option>París</option>
+                            <option>Buenos Aires</option>
+                            <option>Ciudad de México</option>
+                            <option>São Paulo</option>
+                            <option>Santiago de Chile</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="fechaIda">Fecha de ida</label>
+                        <input type="date" id="fechaIda" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="fechaRegreso">Fecha de regreso</label>
+                        <input type="date" id="fechaRegreso" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="pasajeros">Pasajeros</label>
+                        <select id="pasajeros">
+                            <option value="1">1 pasajero</option>
+                            <option value="2">2 pasajeros</option>
+                            <option value="3">3 pasajeros</option>
+                            <option value="4">4 pasajeros</option>
+                            <option value="5">5 pasajeros</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="boton-buscar">
+                        Buscar vuelos <span>→</span>
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- DESTINOS -->
+        <section class="seccion-destinos" id="destinos">
+
+            <div class="titulo-seccion">
+                <span>DESTINOS POPULARES</span>
+                <h2>El mundo está esperando por ti</h2>
+                <p>Descubre algunos de los lugares increíbles a los que puedes viajar.</p>
+            </div>
+
+            <div class="destinos-grid">
+
+                <article class="tarjeta-destino">
+                    <img src="https://www.semana.com/resizer/v2/S6RBJX6ZTRGKRA23HXZYCW6RV4.jpg?auth=cfbcf7df7abfe99a6f08773f270479718411480f973f240d55e764391b19b7c2&smart=true&quality=75&width=768&height=432" alt="Cartagena">
+                    <div class="destino-info">
+                        <span>Colombia</span>
+                        <h3>Cartagena</h3>
+                        <p>Historia, playas y cultura.</p>
+                        <button class="boton-destino" data-destino="Cartagena">Explorar destino →</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1TZQhckFr5uyGuG64GD6nEy0TcQqY7ltvKgIYiNVjMNnm3pMJskccm8EF&s=10" alt="Buenos Aires, Argentina">
+
+    <div class="destino-info">
+        <span>Argentina</span>
+        <h3>Buenos Aires</h3>
+        <p>Arquitectura, cultura, gastronomía y encanto porteño.</p>
+
+        <button class="boton-destino" data-destino="Buenos Aires">
+            Explorar destino →
+        </button>
+    </div>
+</article>
+
+                <article class="tarjeta-destino">
+                    <img src="https://www.bigbustours.com/media/wysiwyg/Article-Images-2020/New-York/BBT-Night-Article-IMG-1-Ferry.jpg" alt="New York">
+                    <div class="destino-info">
+                        <span>Estados Unidos</span>
+                        <h3>New York</h3>
+                        <p>Una ciudad llena de posibilidades.</p>
+                        <button class="boton-destino" data-destino="New York">Explorar destino →</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28FvWv9eQR2qjWqX-VG0QE7TIfN6fod3SkNDjKcyloQ&s=10" alt="Santa Marta, Colombia">
+
+    <div class="destino-info">
+        <span>Colombia</span>
+        <h3>Santa Marta</h3>
+        <p>Playas paradisíacas, montañas y naturaleza caribeña.</p>
+
+        <button class="boton-destino" data-destino="Santa Marta">
+            Explorar destino →
+        </button>
+    </div>
+</article>
+
+                <article class="tarjeta-destino">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYNhcRCUhZuqG-3A9IwGEkagHn_Zbo03cmsdYVJ897JjKOz1BOyyvntE&s=10" alt="París">
+                    <div class="destino-info">
+                        <span>Francia</span>
+                        <h3>París</h3>
+                        <p>Romance, arte y arquitectura.</p>
+                        <button class="boton-destino" data-destino="París">Explorar destino →</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvLaTryC_2MhkTvBFxkV4EEvJfDiQWzOjCCxzOs1TGqQALW0y-GtpLBk&s=10" alt="Dubái">
+                    <div class="destino-info">
+                        <span>Emiratos Árabes Unidos</span>
+                        <h3>Dubái</h3>
+                        <p>Lujo, modernidad y aventura.</p>
+                        <button class="boton-destino" data-destino="Dubái">Explorar destino →</button>
+                    </div>
+                </article>
+
+                  <!-- MADRID -->
+        <article class="tarjeta-destino">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_643yc94aa-NE98u5_QRjKQjIIF-ozbz9c2Isw2eGJh1qyMX4gUwshuk&s=10"
+                 alt="Arquitectura de Madrid">
+            <div class="destino-info">
+                <span>🇪🇸 España</span>
+                <h3>Madrid</h3>
+                <p>Historia, gastronomía y cultura española.</p>
+                <button class="boton-destino" data-destino="Madrid">
+                    Explorar destino →
+                </button>
+            </div>
+        </article>
+
+        <!-- MIAMI -->
+        <article class="tarjeta-destino">
+            <img src="https://allusatravel.com/wp-content/uploads/2019/12/MiamiCityTour.jpg"
+                 alt="Vista de Miami">
+            <div class="destino-info">
+                <span>🇺🇸 Estados Unidos</span>
+                <h3>Miami</h3>
+                <p>Playas, entretenimiento y diversión.</p>
+                <button class="boton-destino" data-destino="Miami">
+                    Explorar destino →
+                </button>
+            </div>
+        </article>
+
+        <!-- CIUDAD DE PANAMÁ -->
+        <article class="tarjeta-destino">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yuuVAfbnq8tQpjvpTqCIUvwcyqHTVjC8nSzWH32c1A&s=10"
+                 alt="Ciudad de Panamá">
+            <div class="destino-info">
+                <span>🇵🇦 Panamá</span>
+                <h3>Ciudad de Panamá</h3>
+                <p>Modernidad, historia y paisajes urbanos.</p>
+                <button class="boton-destino" data-destino="Ciudad de Panamá">
+                    Explorar destino →
+                </button>
+            </div>
+        </article>
+        <!-- BOGOTÁ -->
+<article class="tarjeta-destino">
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20250323/pngtree-bogota-skyline-with-majestic-andes-mountains-in-background-photo-photo-image_68992240.webp"
+         alt="Paisaje de Bogotá, Colombia">
+    <div class="destino-info">
+        <span>🇨🇴 Colombia</span>
+        <h3>Bogotá</h3>
+        <p>Descubre la capital, su cultura y arquitectura.</p>
+        <button class="boton-destino" data-destino="Bogotá">
+            Explorar destino →
+        </button>
+    </div>
+</article>
+
+<!-- MEDELLÍN -->
+<article class="tarjeta-destino">
+    <img src="https://www.meer.com/attachments/598b06b540bcd04961d9097447bbcc25de448757/store/fill/860/645/ee5738746cc85b01cb9a2843cf56b453264867fc3f15429185a6387fff43/Medellin-Colombia-Vista-nocturna-de-la-ciudad.jpg"
+         alt="Paisaje de Medellín, Colombia">
+    <div class="destino-info">
+        <span>🇨🇴 Colombia</span>
+        <h3>Medellín</h3>
+        <p>La ciudad de la eterna primavera.</p>
+        <button class="boton-destino" data-destino="Medellín">
+            Explorar destino →
+        </button>
+    </div>
+</article>
+
+<article class="tarjeta-destino">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2UOk9aJozuiy6eqMG9g_4PloR7tNckL8ZVPeXI4-g-46u3AkACUAJsZr&s=10" alt="Santiago de Chile">
+
+    <div class="destino-info">
+        <span>Chile</span>
+        <h3>Santiago de Chile</h3>
+        <p>Disfruta de sus paisajes andinos, cultura, gastronomía y arquitectura.</p>
+
+        <button class="boton-destino" data-destino="Santiago de Chile">
+            Explorar destino →
+        </button>
+    </div>
+</article>
+
+
+
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-imagen">
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000" alt="Avión volando">
+            </div>
+
+            <div class="nosotros-texto">
+                <span>VIAJA CON CONFIANZA</span>
+                <h2>Hacemos que cada viaje sea especial</h2>
+                <p>
+                    En Nervin Airline queremos conectar personas con destinos.
+                    Nuestra misión es ayudarte a descubrir el mundo con
+                    comodidad, seguridad y una experiencia sencilla.
+                </p>
+
+                <div class="beneficios">
+                    <div>✓ Fácil búsqueda de vuelos</div>
+                    <div>✓ Múltiples destinos</div>
+                    <div>✓ Experiencias inolvidables</div>
+                </div>
+
+                <a href="#reservar" class="boton-principal">Comenzar mi viaje →</a>
+            </div>
+        </section>
+
+    </main>
+
+    
+<!-- SECCIÓN DE CONTACTO -->
+<section class="contacto" id="contacto">
+
+    <div class="contacto-encabezado">
+        <span>ESTAMOS PARA AYUDARTE</span>
+        <h2>Contáctanos</h2>
+        <p>
+            ¿Tienes dudas sobre tu próximo viaje?
+            Nuestro equipo está listo para ayudarte.
+        </p>
+    </div>
+
+    <div class="contacto-contenedor">
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="contacto-informacion">
+
+            <h3>Hablemos de tu próximo viaje</h3>
+
+            <p class="texto-contacto">
+                En NERVIN AIRLINE queremos brindarte la mejor experiencia.
+                Comunícate con nosotros y resolveremos tus inquietudes.
+            </p>
+
+            <div class="contacto-dato">
+                <div class="contacto-icono">☎</div>
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>+57 300 000 0000</p>
+                </div>
+            </div>
+
+            <div class="contacto-dato">
+                <div class="contacto-icono">✉</div>
+                <div>
+                    <h4>Correo electrónico</h4>
+                    <p>contacto@Nervin Airline.com</p>
+                </div>
+            </div>
+
+            <div class="contacto-dato">
+                <div class="contacto-icono">📍</div>
+                <div>
+                    <h4>Ubicación</h4>
+                    <p>Barranquilla, Colombia</p>
+                </div>
+            </div>
+
+            <div class="contacto-dato">
+                <div class="contacto-icono">◷</div>
+                <div>
+                    <h4>Horario de atención</h4>
+                    <p>Lunes a viernes: 6:00 a. m. - 2:00 p. m.</p>
+                    <p>Sábados: 6:00 a. m. - 4:00 p. m.</p>
+                </div>
+            </div>
+
+            
+<div class="redes-sociales">
+    <h4>Síguenos en nuestras redes</h4>
+
+    <div class="redes-iconos">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </div>
+</div>
+
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="contacto-formulario">
+
+            <h3>Envíanos un mensaje</h3>
+            <p>Completa el formulario y nos pondremos en contacto contigo.</p>
+
+          <form id="formularioContacto">
+
+    <div class="grupo-formulario">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Ingresa tu nombre completo"
+               minlength="8" maxlength="60" required>
+    </div>
+
+                <div class="grupo-formulario">
+                    <label for="correoContacto">Correo electrónico</label>
+                    <input type="email" id="correoContacto"
+                           placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="asuntoContacto">Asunto</label>
+                    <select id="asuntoContacto" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option>Información sobre vuelos</option>
+                        <option>Reservaciones</option>
+                        <option>Equipaje</option>
+                        <option>Cancelaciones</option>
+                        <option>Reclamos y sugerencias</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mensajeContacto">Mensaje</label>
+                    <textarea id="mensajeContacto" rows="5"
+                        placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">
+                    Enviar mensaje →
+                </button>
+
+                <p id="mensajeEnviado" class="mensaje-enviado" role="status" aria-live="polite" hidden>
+    ✔ Mensaje enviado Te responderemos pronto.
+</p>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SECCIÓN MISIÓN Y VISIÓN -->
+<section class="mision-vision" id="mision-vision">
+
+    <div class="titulo-mv">
+        <span>CONÓCENOS MEJOR</span>
+        <h2>Nuestra identidad</h2>
+        <p>Conoce lo que nos inspira y hacia dónde queremos llegar.</p>
+    </div>
+
+    <div class="mv-contenedor">
+
+        <!-- MISIÓN -->
+        <article class="mv-tarjeta" id="mision">
+
+            <div class="mv-imagen">
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000"
+                     alt="Avión viajando entre las nubes">
+            </div>
+
+            <div class="mv-contenido">
+                <div class="mv-icono">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <span class="mv-etiqueta">NUESTRO PROPÓSITO</span>
+                <h3>Nuestra Misión</h3>
+
+                <p>
+                    Brindar a nuestros clientes una experiencia de viaje
+                    fácil, segura y confiable, ofreciendo soluciones de
+                    reserva de vuelos que conecten personas con diferentes
+                    destinos nacionales e internacionales, mediante un
+                    servicio de calidad, innovación y atención personalizada.
+                </p>
+            </div>
+
+        </article>
+
+        <!-- VISIÓN -->
+        <article class="mv-tarjeta" id="vision">
+
+            <div class="mv-imagen">
+                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1000"
+                     alt="Elementos para planificar viajes por el mundo">
+            </div>
+
+            <div class="mv-contenido">
+                <div class="mv-icono">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+
+                <span class="mv-etiqueta">NUESTRO FUTURO</span>
+                <h3>Nuestra Visión</h3>
+
+                <p>
+                    Ser una plataforma de viajes reconocida por su innovación,
+                    confianza y excelencia en el servicio, convirtiéndonos en
+                    una de las principales opciones para quienes desean
+                    descubrir el mundo, facilitando cada viaje y creando
+                    experiencias inolvidables.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+</section>
+
+
+<!-- PREGUNTAS FRECUENTES -->
+<section class="preguntas" id="preguntas">
+
+    <div class="titulo-preguntas">
+        <span>¿NECESITAS AYUDA?</span>
+        <h2>Preguntas frecuentes</h2>
+        <p>Resolvemos tus dudas para que viajes con tranquilidad.</p>
+    </div>
+
+    <div class="preguntas-contenedor">
+
+        <div class="pregunta-item">
+            <button class="pregunta-boton" type="button">
+                ¿Cómo puedo reservar un vuelo?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="respuesta">
+                <p>
+                    Selecciona tu ciudad de origen, destino, fecha de viaje
+                    y número de pasajeros. Después, haz clic en buscar vuelos
+                    para consultar las opciones disponibles.
+                </p>
+            </div>
+        </div>
+
+        <div class="pregunta-item">
+            <button class="pregunta-boton" type="button">
+                ¿Puedo cambiar la fecha de mi vuelo?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="respuesta">
+                <p>
+                    Sí, puedes solicitar un cambio de fecha. Las condiciones
+                    dependerán de las políticas de la aerolínea y del tipo
+                    de tarifa adquirida.
+                </p>
+            </div>
+        </div>
+
+        <div class="pregunta-item">
+            <button class="pregunta-boton" type="button">
+                ¿Qué documentos necesito para viajar?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="respuesta">
+                <p>
+                    Para vuelos nacionales generalmente necesitas tu documento
+                    de identidad. Para vuelos internacionales debes consultar
+                    los requisitos del país de destino, como pasaporte y visa
+                    cuando corresponda.
+                </p>
+            </div>
+        </div>
+
+        <div class="pregunta-item">
+            <button class="pregunta-boton" type="button">
+                ¿Cómo puedo consultar mi reserva?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="respuesta">
+                <p>
+                    Puedes consultar tu reserva utilizando el código de
+                    confirmación y los datos del pasajero, una vez que el
+                    sistema de reservas esté habilitado.
+                </p>
+            </div>
+        </div>
+
+        <div class="pregunta-item">
+            <button class="pregunta-boton" type="button">
+                ¿Puedo llevar equipaje en mi vuelo?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="respuesta">
+                <p>
+                    Sí. La cantidad y el peso permitido dependen de la
+                    aerolínea y de la tarifa seleccionada. Revisa las
+                    condiciones de equipaje antes de viajar.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCIAS DE NUESTROS VIAJEROS -->
+<section class="experiencias" id="experiencias">
+
+    <div class="titulo-experiencias">
+        <span>EXPERIENCIAS REALES</span>
+        <h2>Lo que dicen nuestros viajeros</h2>
+        <p>Descubre las experiencias de quienes ya han viajado con NERVIN AIRLINE.</p>
+    </div>
+
+    <div class="experiencias-contenedor">
+
+        <!-- COMENTARIO 1 -->
+        <article class="comentario-card">
+
+            <div class="comentario-persona">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                     alt="Foto de Laura Martínez">
+
+                <div class="persona-info">
+                    <h3>Laura Martínez</h3>
+                    <span><i class="fa-solid fa-location-dot"></i> Cartagena, Colombia</span>
+                </div>
+            </div>
+
+            <div class="comentario-estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>4.0</span>
+            </div>
+
+            <p class="comentario-texto">
+                Mi experiencia fue excelente. Encontré mi vuelo fácilmente
+                y pude organizar mi viaje sin complicaciones. ¡Volvería a viajar
+                con NERVIN AIRLINE
+            </p>
+
+            <div class="comentario-pie">
+                <span><i class="fa-solid fa-plane"></i> Viaje a Cartagena</span>
+                <span class="viaje-verificado">
+                    <i class="fa-solid fa-circle-check"></i> Viajero
+                </span>
+            </div>
+
+        </article>
+
+
+        <!-- COMENTARIO 2 -->
+        <article class="comentario-card">
+
+            <div class="comentario-persona">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="Foto de Andrés Rodríguez">
+
+                <div class="persona-info">
+                    <h3>Andrés Rodríguez</h3>
+                    <span><i class="fa-solid fa-location-dot"></i> Medellín, Colombia</span>
+                </div>
+            </div>
+
+            <div class="comentario-estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4.0</span>
+            </div>
+
+            <p class="comentario-texto">
+                Me gustó mucho la facilidad para consultar los destinos
+                y organizar mi viaje. La página tiene un diseño muy agradable
+                y es sencilla de utilizar.
+            </p>
+
+            <div class="comentario-pie">
+                <span><i class="fa-solid fa-plane"></i> Viaje a Bogotá</span>
+                <span class="viaje-verificado">
+                    <i class="fa-solid fa-circle-check"></i> Viajero
+                </span>
+            </div>
+
+        </article>
+
+
+        <!-- COMENTARIO 3 -->
+        <article class="comentario-card">
+
+            <div class="comentario-persona">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                     alt="Foto de Daniela Torres">
+
+                <div class="persona-info">
+                    <h3>Daniela Torres</h3>
+                    <span><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</span>
+                </div>
+            </div>
+
+            <div class="comentario-estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+            </div>
+
+            <p class="comentario-texto">
+                ¡Una experiencia increíble! Me encanta poder encontrar
+                diferentes destinos en un solo lugar. Espero utilizar
+                nuevamente la plataforma para mis próximas vacaciones.
+            </p>
+
+            <div class="comentario-pie">
+                <span><i class="fa-solid fa-plane"></i> Viaje a San Andrés</span>
+                <span class="viaje-verificado">
+                    <i class="fa-solid fa-circle-check"></i> Viajero
+                </span>
+            </div>
+
+        </article>
+
+<!-- COMENTARIO 4 -->
+<article class="comentario-card">
+
+    <div class="comentario-persona">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg"
+             alt="Foto de Carlos Mendoza">
+
+        <div class="persona-info">
+            <h3>Carlos Mendoza</h3>
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Bogotá, Colombia
+            </span>
+        </div>
+    </div>
+
+    <div class="comentario-estrellas">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <span>5.0</span>
+    </div>
+
+    <p class="comentario-texto">
+        Fue muy sencillo organizar mi viaje. Me gustó la presentación
+        de los destinos y lo fácil que resulta encontrar la información.
+        Una plataforma con mucho potencial.
+    </p>
+
+    <div class="comentario-pie">
+        <span>
+            <i class="fa-solid fa-plane"></i>
+            Viaje a Medellín
+        </span>
+
+        <span class="viaje-verificado">
+            <i class="fa-solid fa-circle-check"></i>
+            Viajero
+        </span>
+    </div>
+
+    </article>
+
+</section>
+
+
+<!-- PIE DE PÁGINA -->
+<footer class="pie-pagina">
+
+    <div class="pie-contenido">
+
+        <div class="pie-columna">
+            <a href="#inicio" class="logo logo-footer">
+                ✈ NERVIN<span>AIRLINE</span>
+            </a>
+            <p>
+                Conectamos tus sueños con el mundo.
+                Descubre nuevos destinos y vive experiencias inolvidables.
+            </p>
+        </div>
+
+<div class="pie-columna pie-contacto">
+    <h3>Contáctanos</h3>
+
+    <p class="pie-descripcion">
+        Estamos disponibles para ayudarte a planificar tu próximo viaje.
+    </p>
+
+    <a href="tel:+573000000000" class="telefono-pie">
+        <i class="fa-solid fa-phone"></i>
+        +57 300 648 2856
+    </a>
+
+    <a href="mailto:contacto@aerobook.com">
+        <i class="fa-solid fa-envelope"></i>
+        contacto@aerobook.com
+    </a>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Barranquilla, Colombia
+    </p>
+
+    <p>
+        <i class="fa-solid fa-clock"></i>
+        Lunes a sábado: 6:30 a. m. - 1:00 p. m.
+    </p>
+</div>
+
+
+
+
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
